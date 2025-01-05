@@ -6,6 +6,7 @@ import os.path as osp
 import random
 import time
 import torch
+from torchvision.transforms.functional import rgb_to_grayscale
 from basicsr.data.degradations import circular_lowpass_kernel, random_mixed_kernels
 from basicsr.data.transforms import augment
 from basicsr.utils import FileClient, get_root_logger, imfrombytes, img2tensor
